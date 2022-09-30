@@ -60,7 +60,7 @@ Para a requisição **HTTP GET** na rota `http://localhost:8000/imoveis` deverá
 ]
 ```
 
-A outra rota deverá receber um parâmetro na URL que é o **ID** do imóvel a ser consultado e deverá retornar apenas 1 objeto, que é o objeto correspondente ao **ID** passado como parâmetro na URL, caso seja passado um **ID** que não corresponda a nenhum objeto (imóvel) da lista, deveremos retornar uma mensagem `Não foi encontrado imóvel com o ID {id}`.
+A outra rota deverá receber um parâmetro na URL que é o **ID** do imóvel a ser consultado e deverá retornar apenas 1 objeto, que é o objeto correspondente ao **ID** passado como parâmetro na URL.
 
 Portanto para a requisição **HTTP GET** na rota `http://localhost:8000/imoveis/2` deverá ser retornado o apenas o objeto referente ao ID passado, como no exemplo abaixo:
 
@@ -73,14 +73,6 @@ Portanto para a requisição **HTTP GET** na rota `http://localhost:8000/imoveis
     "bairro": "Cerqueira César",
     "cidade": "São Paulo",
     "cep": "01310-100"
-}
-```
-
-Ainda sobre a rota acima, no caso de requisição informando parâmetro **ID** que não corresponda a nenhum imóvel contido na lista, como por exemplo `http://localhost:8000/imoveis/99`, deveremos retornar a mensagem neste formato abaixo:
-
-```json
-{
-    "mensagem": "Não foi encontrado imóvel com o ID 99"
 }
 ```
 
