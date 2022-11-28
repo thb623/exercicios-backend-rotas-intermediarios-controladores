@@ -51,7 +51,7 @@ _Para a requisição na rota `/multiplicar` utilizando `num1=10` e `num2=5` deve
 Requisição
 
 ```javascript
-/subtrair?num1=10&num2=5
+/multiplicar?num1=10&num2=5
 ```
 
 Resposta
@@ -65,7 +65,7 @@ _Para a requisição na rota `/dividir` utilizando `num1=10` e `num2=5` deveremo
 Requisição
 
 ```javascript
-/subtrair?num1=10&num2=5
+/dividir?num1=10&num2=5
 ```
 
 Resposta
